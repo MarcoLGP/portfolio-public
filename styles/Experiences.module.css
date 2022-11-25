@@ -1,0 +1,163 @@
+.experiences_container h2 {
+    color: #fff;
+    font-family: Inter;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.experiences_details_module_container {
+    font-family: Inter;
+    width: 60vw;
+    animation: slide-left 1s;
+    color: #C4C4C4;
+    margin-left: 20%;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(-60px);
+    }
+}
+
+@keyframes slide-vertical {
+    0% {
+        transform: translateY(-60px);
+    }
+}
+
+.experiences_details_module_container h3 {
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.experiences_details_module_container h4 {
+    color: #02b84d;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.experiences_details_module_container p {
+    margin-top: 20px;
+    width: 60vw;
+}
+
+.title_date_container span {
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.experiences_menu_module_container {
+    border-left: 3px solid #212121;
+    display: flex;
+    width: 170px;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+}
+
+.experiences_menu_module_selected {
+    border-left: 3px solid #27AE60;
+    background-color: #272727;
+}
+
+.experiences_menu_module_container:hover {
+    background-color: #212121;
+    cursor: pointer;
+}
+
+.experiences_menu_module_container span {
+    color: #B5B5B5;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.experiences_container {
+    width: 88vw;
+    font-family: DM Sans;
+    padding: 60px 0px 60px;
+    align-self: center;
+}
+
+.experiences_menu_details {
+    display: flex;
+}
+
+.experiences_title_date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experiences_menu_modules {
+    margin-top: 40px;
+}
+
+.experiences_background_container {    
+    margin-top: 5%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: #121212;
+}
+
+@media (max-width: 680px) {
+    
+    .experiences_title_date {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 874px) {
+    
+    .experiences_container h2 {
+        text-align: center;
+    }
+
+    .experiences_details_module_container {
+        margin-left: auto;
+        animation: slide-vertical 0.5s;
+        margin-right: auto;
+    }
+
+    .experiences_menu_details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experiences_menu_modules {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 530px) {
+
+    .experiences_menu_modules {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experiences_title_date {
+        align-items: center;
+    }
+
+    .experiences_details_module_container h4 {
+        text-align: center;
+    }
+
+    .experiences_details {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
